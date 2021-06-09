@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>211676783926-2j3d3me78s85j0b24jfn225cm01qf4q4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.211676783926-2j3d3me78s85j0b24jfn225cm01qf4q4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBH0oYnyskuyzzT0ODn4DOpt50gXwqRQak</string>
+	<key>GCM_SENDER_ID</key>
+	<string>211676783926</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mathispaturle.A-la-carte</string>
+	<key>PROJECT_ID</key>
+	<string>a-la-carte-8177e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>a-la-carte-8177e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:211676783926:ios:955a2e5180070984653f97</string>
+</dict>
+</plist>

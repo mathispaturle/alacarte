@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="DishTVC" customModule="A_la_carte" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="808-2G-0jX">
+                        <rect key="frame" x="22" y="22" width="41.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTt-Xl-1RE">
+                        <rect key="frame" x="196" y="22" width="55" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="ysq-kn-Uun"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgu-sK-ZeN">
+                        <rect key="frame" x="72" y="21" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Xah-R3-Ngj"/>
+                            <constraint firstAttribute="width" constant="20" id="wsH-30-TPD"/>
+                        </constraints>
+                        <state key="normal" image="info.circle" catalog="system"/>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Gn-UA-pQI">
+                        <rect key="frame" x="273" y="21" width="53" height="22"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0y-8y-z3X">
+                                <rect key="frame" x="0.0" y="0.0" width="26.5" height="22"/>
+                                <state key="normal" image="square.and.pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="editPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bdS-LA-M97"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdn-ep-GfD">
+                                <rect key="frame" x="26.5" y="0.0" width="26.5" height="22"/>
+                                <state key="normal" image="bin.xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="deletePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pra-wq-mhR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="wyu-cR-hox"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="808-2G-0jX" secondAttribute="bottom" priority="750" constant="8" id="6Zq-aG-DAq"/>
+                    <constraint firstItem="bTt-Xl-1RE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zgu-sK-ZeN" secondAttribute="trailing" constant="32" id="8so-Sk-tad"/>
+                    <constraint firstItem="0Gn-UA-pQI" firstAttribute="centerY" secondItem="bTt-Xl-1RE" secondAttribute="centerY" id="A8G-gH-KMw"/>
+                    <constraint firstItem="0Gn-UA-pQI" firstAttribute="leading" secondItem="bTt-Xl-1RE" secondAttribute="trailing" constant="22" id="Gam-SS-6cE"/>
+                    <constraint firstItem="808-2G-0jX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" priority="750" constant="8" id="P2C-VM-Gp7"/>
+                    <constraint firstItem="808-2G-0jX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="YJh-8k-oc0"/>
+                    <constraint firstItem="808-2G-0jX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gLE-fA-irs"/>
+                    <constraint firstItem="zgu-sK-ZeN" firstAttribute="leading" secondItem="808-2G-0jX" secondAttribute="trailing" constant="8.5" id="iyr-1E-OBR"/>
+                    <constraint firstAttribute="trailing" secondItem="0Gn-UA-pQI" secondAttribute="trailing" constant="12" id="k2p-Dk-XJy"/>
+                    <constraint firstItem="zgu-sK-ZeN" firstAttribute="centerY" secondItem="808-2G-0jX" secondAttribute="centerY" id="lV0-bE-wHi"/>
+                    <constraint firstItem="bTt-Xl-1RE" firstAttribute="firstBaseline" secondItem="808-2G-0jX" secondAttribute="firstBaseline" id="saI-7b-h17"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dishAllergens" destination="zgu-sK-ZeN" id="Eal-sC-CIn"/>
+                <outlet property="dishDelete" destination="qdn-ep-GfD" id="al1-bt-KHa"/>
+                <outlet property="dishEdit" destination="B0y-8y-z3X" id="3fi-mz-3iK"/>
+                <outlet property="dishName" destination="808-2G-0jX" id="ObY-HY-aWb"/>
+                <outlet property="dishPrice" destination="bTt-Xl-1RE" id="V3s-LM-NU0"/>
+            </connections>
+            <point key="canvasLocation" x="57.971014492753625" y="65.625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bin.xmark" catalog="system" width="128" height="93"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+    </resources>
+</document>
